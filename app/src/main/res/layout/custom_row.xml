@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rowLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="-7dp"
+    tools:layout_editor_absoluteY="28dp">
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/secondNameTxt"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="34dp"-->
+    <!--        android:layout_marginEnd="116dp"-->
+    <!--        android:text="M"-->
+    <!--        android:textSize="23sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/firstNameTxt"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/firstNameTxt"-->
+    <!--        app:layout_constraintVertical_bias="0.222" />-->
+
+    <TextView
+        android:id="@+id/id_text"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/showProfile"
+        app:layout_constraintEnd_toStartOf="@+id/showProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/showProfile"
+        app:layout_constraintVertical_bias="0.446" />
+
+    <TextView
+        android:id="@+id/firstNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="25dp"
+        android:text="Joe"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ageTxt"
+        app:layout_constraintEnd_toStartOf="@+id/ageTxt"
+        app:layout_constraintStart_toEndOf="@+id/showProfile"
+        app:layout_constraintTop_toTopOf="@+id/ageTxt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ageTxt"
+        android:layout_width="37dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="108dp"
+        android:gravity="center"
+        android:text="23"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Location"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/showProfile"
+        android:layout_width="54dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:src="@android:mipmap/sym_def_app_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/firstNameTxt"
+        app:layout_constraintStart_toEndOf="@+id/id_text"
+        app:layout_constraintTop_toTopOf="@+id/firstNameTxt"
+        app:layout_constraintVertical_bias="0.451"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/Location"
+        android:layout_width="92dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="Kochi"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/ageTxt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
